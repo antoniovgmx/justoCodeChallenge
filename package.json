@@ -1,0 +1,25 @@
+{
+  "name": "justocodechallenge",
+  "version": "1.0.0",
+  "description": "Justo Code Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniovgmx/justoCodeChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniovgmx/justoCodeChallenge/issues"
+  },
+  "homepage": "https://github.com/antoniovgmx/justoCodeChallenge#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "nodemon": "^2.0.20"
+  }
+}
