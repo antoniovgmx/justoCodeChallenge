@@ -4,25 +4,63 @@ const controller = require('../controllers/controller');
 
 // Login
 // GET /
-
 router.get('/login/', (req,res)=>{
-	
-	res.send(controller.login());
+	let response = controller.login(req.body);
+	if(response.success){
+		res.redirect('/hits/');
+	} else {
+		res.send(response);
+	}
 });
 
 // Register
-// GET /register
-
-router.get('/register/', (req,res)=>{
-	res.redirect('/hits');
+// POST /register
+router.post('/register/', (req,res)=>{
+	
 });
 
-// hits
+// Logout
+// GET /logout
+router.get('/logout/', (req,res)=>{
+
+});
+
 // GET /hits
-
 router.get('/hits/', (req,res)=>{
-	res.send('Hits');
+
 });
+
+// GET /hit
+router.get('/hit/', (req,res)=>{
+
+});
+
+// GET /hitmen
+router.get('/hitmen/', (req,res)=>{
+
+});
+
+// GET /hitman
+router.get('/hitman/', (req,res)=>{
+
+});
+
+// PUT /hit
+router.get('/hit/update/', (req,res)=>{
+
+});
+
+// PUT /hitman
+router.get('/hitman/update/', (req,res)=>{
+
+});
+
+
+
+
+
+
+
 
 
 
